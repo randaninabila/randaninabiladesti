@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="bg1">
+    <form action="#">
+        <fieldset class="daftar">
+            <legend style="font-size: larger;"><b> Akun </b> </legend>
+            <table>
+                <tr>
+                    <td> <label for="uname"> Username: </label> </td>
+                    <td> <input placeholder="input username" type="text" id="uname" name="username"></td>
+                </tr>
+                <tr>
+                    <td> <label for="pass">Password: </label></td>
+                    <td> <input placeholder="input password" type="Password" id="pass" name="Password"></td>
+                </tr>
+                <tr>
+                    <td> <label for="pass2"> Konfirmasi Password </label></td>
+                    <td> <input placeholder="confirm password" type="Password" id="pass2"> </td>
+                </tr>
+            </table>
+        </fieldset><br>
+    </form>
+    </div>
+    
+    <div id="bg2">
+        <form action="#">
+        <br> 
+            <fieldset class="data">
+                <legend style="font-size: larger;"> <b> Data </b> </legend>
+                    <table>
+                        <tr>
+                            <td><label for="name"> Nama: </label> </td>
+                            <td><input type="text" id="name" name="nama-lengkap" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email"> Email: </label> </td>
+                            <td><input type="email" id="email" email="email-pribadi" /> </td>
+                        </tr>
+                        <tr>
+                            <td><label for="password"> Password: </label> </td>
+                            <td><input type="password" id="password" name="password-" /> </td>
+                        </tr>
+                        <tr>
+                            <td><label for="prodi"> Program studi: </label></td>
+                            <td><select name="prodii" id="prodi">
+                                    <option value="#">-- Choose One --</option>
+                                    <option value="ilkomp">Ilmu Komputer</option>
+                                    <option value="TI">Teknologi Informasi</option>
+                                </select> </td>
+                        </tr>
+                        <tr>
+                            <td><label for="TTL"> Alamat: </label></td>
+                            <td><textarea cols="30" rows="3" name="alamat" id="alamat" style="background-color: aquamarine">
+isi alamat disini
+                                </textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="tanggal"> Tanggal Lahir: </label></td>
+                            <td><input type="date" name="tgl" id="tanggal"></td>
+                        </tr>
+                    </table>
+
+                        <p class="border">
+                            <label for="prodi" style="color: #e22b80;"> Kelas </label><br>
+                            <input type="radio" name="studi" id="Com a"><label for="Com a"> Com A </label><br>
+                            <input type="radio" name="studi" id="Com b"><label for="Com b"> Com B </label><br>
+                            <input type="radio" name="studi" id="Com c"><label for="Com c"> Com C </label><br><br>
+                        </p>
+                        <p class="bg">
+                            <label for="minat"> Peminatan </label><br>
+                            <input type="checkbox" name="..." id="robot"><label for="robot"> Robotic </label><br>
+                            <input type="checkbox" name="..." id="program"><label for="program"> Pemrograman </label><br>
+                            <input type="checkbox" name="..." id="keamanan"><label for="keamanan"> Cyber Security </label><br>
+                            <input type="checkbox" name="..." id="desain"><label for="desain"> Desain </label> <br><br>
+                        </p>
+                        <br><br>
+            </fieldset>
+        </form>
+    </div>
+            &nbsp;<input type="submit" value="Daftar">
+            <input type="reset" value="Reset">
+        </form>
+</body>
+</html>
